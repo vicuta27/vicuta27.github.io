@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--<meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">-->
+	<title>HTML Email Template Assesment</title>
+   <style>
+   	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+      body{
+         width: 100% !important;
+        height:100% !important;
+        padding: 0;
+        -webkit-text-size-adjust: none;  /* stop WebKit and Windows mobile changing text size */
+        -ms-text-size-adjust: 100%;  /* stop WebKit and Windows mobile changing text size */
+        margin: 0 auto !important; /* fix email not centered on Android 4.4 + Samsung Mail */
+      }
+      a:visited {
+         text-decoration: none;
+         color: #000001;
+      } /* change visited links */
+      table {
+         border-spacing: 0;
+         table {border-collapse:collapse !important;border-spacing: 0;mso-table-lspace:0pt; mso-table-rspace:0pt;}
+        /* Remove spacing between tables in Outlook 2007 and up */
+      }
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
+      a {
+         color: #000;
+         text-decoration: none;
+      }
+      
+		@media screen and (max-width: 580px) {
+
+         .px90 {
+             width: 90% !important;
+             height: auto !important;
+             margin: auto !important;
+             min-width: 0!important;}
+
+         .px80 {
+            width: 80% !important;
+            height: auto !important;
+            margin: auto !important;
+            min-width: 0!important;
+         }
+         .px-600-0 {
+				padding-left: 0!important;
+				padding-right: 0!important;
+			}
+         .banner {
+            height: auto!important;
+            padding-top: 40px!important;
+            padding-bottom: 60px!important;
+         }
+         .two-columns .padding,
+         .two-third-columns .padding,
+         .three-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+            width:80%;
+            max-width: 80%;
+         }
+
+        
+         img.two-col-img {
+            width: 300px!important;
+            max-width: 300px!important;
+         }
+         .two-third-columns .padding.first {
+            padding-bottom: 0!important;
+         }
+         .two-third-columns .padding.last {
+            padding-top: 0!important;
+         }
+         img.one-third-col-img,
+         img.three-col-img-last {
+            width: 200px!important;
+            max-width: 200px!important;
+         }
+         .two-third-columns .content {
+            text-align: center!important;
+         }
+      }
+
+      @media only screen and (max-width: 480px){
+        .templateColumns{
+            width:100% !important;
+        }
+
+        .columnimg{
+            display:block !important;
+            width:100% !important;
+        }
+        .px80 
+        {
+         width: 80% !important;
+         height: auto !important;
+         margin: auto !important;
+         min-width: 0!important; 
+      }
+   
+      }
+      @media screen and (max-width: 380px) {
+         .banner {
+            padding-top: 10px!important;
+            padding-bottom: 40px!important;
+         }
+         img.three-col-img {
+            width: 200px!important;
+            max-width: 200px!important;
+         }
+         .two-third-columns .content {
+            text-align: center!important;
+         }
+         .px-sm-0 {
+				padding-left: 0!important;
+				padding-right: 0!important;
+			}
+   
+      }
+
+
+	</style>
+ <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+       table{border-collapse:collapse!important;}
+      <![endif]-->
+
+</head>
+<body style="Margin:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-width:100%;background-color: #dde0e1;">
+   <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+         {background-color:#dde0e1!important;}
+         body, table, td, p, a{font-family:sans-serif, Arial,Helvetica!important;}
+      <![endif]-->
+
+<center style="width:100%; table-layout:fixed;background-color: #dde0e1;">
+
+
+   <table class="px90" width="560" style="width:560px;" align="center" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+         <td colspan="2" style="font-size:8px;line-height:8px;">&nbsp;</td>
+     </tr>
+      <tr>
+         <td width="496" align="left" style="color:#000; font-family:Arial, Helvetica, sans-serif; font-size:12px;line-height:16px;">
+            From your award-&nbsp;winning network
+              
+            </td>
+          <td width="496" align="right" style="color:#000; font-family:Arial, Helvetica, sans-serif; font-size:12px;line-height:16px;">
+      
+              <a href="<%@ include view='MirrorPageUrl' %>" target="_blank" style="color:#000; text-decoration:none;">View online</a>
+          </td>
+      </tr>
+      <tr>
+         <td colspan="2" style="font-size:8px;line-height:8px;">&nbsp;</td>
+     </tr>
+      
+</table>
+  
+   <div style="max-width:600px;background-color:#fafdfe;box-shadow:0 0 5px rgba(0, 0, 0, .2);">
+
+     <!-- Preheader (remove comment) -->
+     <div style="font-size: 0px;color: #fafdfe;line-height: 1px;display: none;mso-line-height-rule:exactly;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
+
+   </div>
+   <!-- End Preheader (remove comment) -->
+   
+   
+
+      <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-spacing:0;color:#565656;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+
+      
+         <table align="center" style="border-spacing:0;color:#565656;font-family: Arial, sans-serif, Helvetica!important;background-color: #fafdfe;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
+
+
+
+ 
+
+<!-- START HEADER -->
+<tr>
+     <td  style="color: #000;font-family:Georgia, Times, 'Times New Roman', serif;font-size:14px;text-align:center;padding-bottom:10px;padding-top: 15px;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+              <tr>
+                  <td style="text-align:center;font-size:0px;">
+                     <div>
+                <!--[if mso]>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="">
+           <tr>
+          <td style="padding-top:15px;padding-right:10px;padding-bottom:5px;padding-left:10px">
+          <![endif]-->
+                    <a href="https://www.three.co.uk/" style="padding-bottom:5px;padding-left:5px;padding-right:5px;display:inline-block;color:#000;font-family:Georgia, Times, 'Times New Roman', serif;font-size:14px;text-decoration:none;">Life Need a Big Network</a>
+   <!--[if mso]></td><td><![endif]-->
+                     <span style="font-size:16px;font-family:Georgia, Times, 'Times New Roman', serif;color:#021f2a;">|</span>
+   <!--[if mso]></td><![endif]-->
+   <!--[if mso]></td><td style="padding-top:15px;padding-right:10px;padding-bottom:5px;padding-left:10px"><![endif]-->
+                      <a href="https://www.three.co.uk/" style="padding-bottom:5px;padding-left:5px;padding-right:5px;display:inline-block;color:#000;font-family:Georgia, Times, 'Times New Roman', serif;font-size:14px;text-decoration:none;">My 3</a>
+   <!--[if mso]></td><td><![endif]-->
+                       <span style="font-size:16px;font-family:Georgia, Times, 'Times New Roman', serif;color:#021f2a;">|</span>
+   <!--[if mso]></td><![endif]-->
+   <!--[if mso]></td><td style="padding-top:15px;padding-right:10px;padding-bottom:5px;padding-left:10px"><![endif]-->
+                       <a href="https://www.three.co.uk/" style="padding-bottom:5px;padding-left:5px;padding-right:5px;display:inline-block;color:#000;font-family:Georgia, Times, 'Times New Roman', serif;font-size:14px;text-decoration:none;">Support</a>
+   <!--[if mso]></td><td><![endif]-->
+                       <span style="font-size:16px;font-family:Georgia, Times, 'Times New Roman', serif;color:#021f2a;">|</span>
+   <!--[if mso]></td><![endif]-->
+   <!--[if mso]></td><td style="padding-top:15px;padding-right:10px;padding-bottom:5px;padding-left:10px"><![endif]-->
+                      <a href="https://www.three.co.uk/" style="padding-bottom:5px;padding-left:5px;padding-right:5px;display:inline-block;color:#000;font-family:Georgia, Times, 'Times New Roman', serif;font-size:14px;text-decoration:none;">Store Locator</a>
+   <!--[if mso]></td></tr></table><![endif]-->
+                   </div>
+               </td>
+             </tr>
+        </table>
+     </td>
+ </tr>
+<!-- END HEADER -->
+
+<!-- START BANNER -->
+<tr>
+   <td  width="100%" style="max-width:600px;">
+      <img src="images/hero_banner.png" style="width:100%;margin:0; padding:0; border:none; display:block;"  alt="New from Samsung this month">
+
+   </td>
+</tr>
+<!-- END BANNER -->
+
+<!-- START FULL WIDTH TEXT -->
+<tr>
+   <td style="padding:36px 30px 10px 30px;">
+     <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+       <tr>
+         <td style="padding:0 0 36px 0;color:#153643;">
+           <h1 style="font-size:24px;margin:0 0 20px 0;font-size:16px;font-family:Georgia, Times, 'Times New Roman', serif;">Hello James,</h1>
+           <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">A fresh start and new beginnings are right around the corner with hot product launches from
+            Samsung and new offers on Three.<br><br>
+            
+            Leading the way, the new Samsung Galaxy Z Series has launched, plus the latest in Samsung smart
+            accessories.</p>
+           
+         </td>
+       </tr>
+       </table>
+       </td>
+ </tr>
+<!-- END FULL WIDTH TEXT -->
+
+<!-- START BANNER2 -->
+<tr>
+   <td  width="100%" style="max-width:640px;">
+      <img src="images/hero_banner2.png" style="width:100%;margin:0; padding:0; border:none; display:block;" alt="Samsung Galaxy Z Fold4 | Z Flip4">
+
+   </td>
+</tr>
+<!-- END BANNER2 -->
+
+
+<!-- START FULL WIDTH TEXT -->
+<tr>
+   <td style="padding:36px 30px 10px 30px;">
+     <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;">
+       <tr>
+         <td style="padding:0 0 15px 0;color:#153643;">
+           <h1 style="font-size:24px;margin:0 0 20px 0;font-family:Arial,sans-serif;">The latest from Samsung is here</h1>
+           <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">The Samsung Galaxy Z Flip4 and Z Fold4 have arrived. Incredible folding displays. Versatile cameras.<br><br>
+
+            Purchase today and claim the advanced Galaxy Buds2 Pro wireless earbuds worth &#163;219.<br><br>
+            
+            Available to order now, with awesome extras like up to &#163;480 cashback when you trade in your old
+            device and 12&nbsp;months Disney&#43; on Samsung.</p>
+           
+         </td>
+         </tr>
+
+	
+       <tr>
+         <td align="left">
+
+            	<!--[if (gte mso 9)|(IE)]>
+										</td><td width="165" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+									<![endif]-->
+            <table align="left" border="0"  cellpadding="0" style="border-spacing: 0;max-width:100%;" role="presentation">
+
+                  <tr>
+                     <td style="padding: 14px 44px 14px 44px;width: 120px; border-radius:10px; background-color: #000;" align="center">
+                         <a  href="https://www.three.co.uk/" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #FFBFC5; text-decoration: none; display: inline-block;">Order now</a>
+                     </td>
+                 </tr>
+
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+										</td>
+										</tr>
+										</table>
+									<![endif]-->
+         </td>
+      </tr>
+  
+  </table>
+  
+  </td>
+  </tr>
+      
+<!-- END FULL WIDTH TEXT -->
+
+
+<!-- START FIRST TWO COLUMNS -->
+<tr>
+   <td style="padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;">
+      <table width="100%" style="border-spacing:0;" role="presentation">
+         <tr>
+            <td class="columnimg" style="padding-right:0;padding-left:0;font-size:0;text-align: center;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                  <tr>
+                  <td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+               <table class="column" style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td>
+
+                        <table class="columnimg" style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td class="templateColumns">
+                                 <a href="https://www.three.co.uk/" target="_blank">
+                                    <img src="images/pod1.png" width="300" height="275px" alt="Galaxy Watch5" style="border-width:0;max-width:300px;height:auto;display:block;" class="columnimg">
+                                 </a>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+
+
+
+
+
+               <table style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td style="vertical-align:top;">
+
+                        <table style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td style="border-spacing:0;vertical-align:top;padding-left: 20px;padding-right: 10px;">
+                                 <p style="font-family: Helvetica, Arial, sans-serif;font-size:27px;font-weight:bold;line-height:36px;color: #000;">Hot new accessory from Samsung</p>
+                                 <p style="font-size:16px;line-height:22px;color: #000;vertical-align: top;">Track your sleep and fitness with the new Galaxy Watch5 &#45; Samsung&#39;s smartest watch yet. Order today and claim a  &#163;50 Google Play voucher.<br><br>
+                                    
+                                    Buy as a standalone accessory or create a bundle with your new device.</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding-top:10px;padding-left: 20px;padding-right: 10px;">
+                                 <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
+                                    <tr>
+                                       
+                                       <td style="padding: 14px 26px 14px 26px;border-radius:10px; background-color: #000;width:200px;" align="center">
+                                          <a  target="_blank" href="https://www.three.co.uk/" style="font-size: 17px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;line-height: 19px; color: #FFBFC5; text-decoration: none; display: inline-block;">Discover Galaxy Watch5</a>
+                                      </td>
+
+                                       
+
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END FIRST TWO COLUMNS -->
+
+
+
+
+
+
+
+
+
+<!-- START TWO SECOND COLUMNS -->
+
+<tr>
+   <td style="padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;">
+      <table width="100%" style="border-spacing:0;" role="presentation">
+         <tr>
+            <td class="two-columns" style="padding-right:0;padding-left:0;font-size:0;text-align: center;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                           <![endif]-->
+
+
+               <table style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td style="vertical-align:top;">
+
+                        <table style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td style="border-spacing:0;vertical-align:top;padding-left: 20px;padding-right: 10px;">
+                                 <p style="font-family: Helvetica, Arial, sans-serif;font-size:27px;font-weight:bold;line-height:36px;color: #000;">Enjoy extra plusses on Three+</p>
+                                 <p style="font-size:16px;line-height:22px;color: #000;vertical-align: top;">Customers saved over  	&#163;200&#184;000 last month by using Three+ rewards, so don&#39;t forget to browse our
+                                    offers every week.<br><br>
+                                    
+                                    You can enjoy weekly movie nights with Cineworld, meals out for two at Frankie &amp; Benny&#39;s, and send a 99p personalised card from thortful every thortful Thursday.</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding-top:10px;padding-left: 20px;padding-right: 10px;padding-bottom: 20px;">
+                                 <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
+                                    <tr>
+                                       
+                                       <td style="padding: 14px 26px 14px 26px;border-radius:10px; background-color: #000;width:200px;" align="center">
+                                          <a  href="https://www.three.co.uk/" target="_blank" style="font-size: 17px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;line-height: 19px; color: #FFBFC5; text-decoration: none; display: inline-block;">Download Three+ today</a>
+                                      </td>
+
+                                       
+
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+  <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                           <![endif]-->
+              
+
+               
+
+               <table style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td>
+
+                        <table  style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td>
+                                 <a href="https://www.three.co.uk/" target="_blank">
+                                    <img src="images/pod2.png" width="300" height="275px" alt="Three+" style="border-width:0;max-width:300px;display:block;">
+                                 </a>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+ <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END SECOND TWO COLUMNS -->
+
+<!-- START THIRD TWO COLUMNS -->
+<tr>
+   <td style="padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;">
+      <table width="100%" style="border-spacing:0;" role="presentation">
+         <tr>
+            <td class="two-columns" style="padding-right:0;padding-left:0;font-size:0;text-align: center;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                  <tr>
+                  <td width=300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+               <table class="column" style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td>
+
+                        <table style="border-spacing:0;text-align: left;" role="presentation" class="px80">
+                           <tr>
+                              <td class="px80">
+                                 <a href="https://www.three.co.uk/" target="_blank">
+                                    <img src="images/pod3.png" width="300"  alt="Student offers" style="border-width:0;max-width:300px;height:auto;display:block;">
+                                 </a>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+               <table style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td style="vertical-align:top;">
+
+                        <table style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td style="border-spacing:0;vertical-align:top;padding-left: 20px;padding-right: 10px;">
+                                 <p style="font-family: Helvetica, Arial, sans-serif;font-size:27px;font-weight:bold;line-height:36px;color: #000;">Discover student offers</p>
+                                 <p style="font-size:16px;line-height:22px;color: #000;vertical-align: top;">Save £4 a month with our Student Unlimited SIM and get 6 months half price.<br><br>
+                                    Plus, for only &#163;1 extra a month students can add a Google Chromebook to certain handset plans. Or
+                                    enjoy 40GB for the price of 2GB on selected Samsung tablets until 31 October.</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding-top:10px;padding-left: 20px;padding-right: 10px;">
+                                 <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
+                                    <tr>
+                                       
+                                       <td style="padding: 14px 26px 14px 26px;border-radius:10px; background-color: #000;width:200px;" align="center">
+                                          <a href="https://www.three.co.uk/" target="_blank" style="font-size: 17px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;line-height: 19px; color: #FFBFC5; text-decoration: none; display: inline-block;">View student offers</a>
+                                      </td>
+
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END THIRD TWO COLUMNS -->
+
+<!-- START FOUR COLUMNS -->
+
+<tr>
+   <td style="padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;">
+      <table width="100%" style="border-spacing:0;" role="presentation">
+         <tr>
+            <td class="two-columns" style="padding-right:0;padding-left:0;font-size:0;text-align: center;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                           <![endif]-->
+
+
+               <table style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td style="vertical-align:top;">
+
+                        <table style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td style="border-spacing:0;vertical-align:top;padding-left: 20px;padding-right: 10px;">
+                                 <p style="font-family: Helvetica, Arial, sans-serif;font-size:27px;font-weight:bold;line-height:36px;color: #000;">Join the Three Community</p>
+                                 <p style="font-size:16px;line-height:22px;color: #000;vertical-align: top;">A place for you to find answers, share experiences and connect with each other.<br><br>
+
+                                    Sign up to Three Community today, available 24/7 to all Three customers with our moderators on hand for support too.</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding-top:10px;padding-left: 20px;padding-right: 10px;padding-bottom: 20px;">
+                                 <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
+                                    <tr>
+                                       
+                                       <td style="padding: 14px 26px 14px 26px;border-radius:10px; background-color: #000;width:200px;" align="center">
+                                          <a href="https://www.three.co.uk/" target="_blank" style="font-size: 17px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;line-height: 19px; color: #FFBFC5; text-decoration: none; display: inline-block;">Register to Three Community</a>
+                                      </td>
+
+                                       
+
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+  <!--[if (gte mso 9)|(IE)]>
+                           </td><td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                           <![endif]-->
+              
+
+               
+
+               <table class="column" style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td height="275px">
+
+                        <table class="content" style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td>
+                                 <a href="https://www.three.co.uk/" target="_blank">
+                                    <img src="images/pod4.png" width="300"  alt="Three Community" style="border-width:0;max-width:300px;height:auto;display:block;">
+                                 </a>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+ <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END FOUR COLUMNS -->
+
+<!-- START FIFTH TWO COLUMNS-->
+
+
+ <tr>
+   <td style="padding-top:20px;padding-right:0;padding-bottom:20px;padding-left:0;">
+      <table width="100%" style="border-spacing:0;" role="presentation">
+         <tr>
+            <td class="two-columns" style="padding-right:0;padding-left:0;font-size:0;text-align: center;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                  <tr>
+                  <td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+               <table class="column" style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td height="275px">
+
+                        <table class="content" style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td class="px90">
+                                 <a href="https://www.three.co.uk/" target="_blank">
+                                    <img src="images/pod5.png" width="300"  alt="Galaxy Watch5Super-fast Home Broadband, but not as you know it." style="border-width:0;max-width:300px;height:auto;display:block;">
+                                 </a>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+               </td><td width="300" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+               <table style="border-spacing:0;vertical-align:top;width:100%;max-width:300px;display:inline-block;" role="presentation">
+                  <tr>
+                     <td style="vertical-align:top;">
+
+                        <table style="border-spacing:0;text-align: left;" role="presentation">
+                           <tr>
+                              <td style="border-spacing:0;vertical-align:top;padding-left: 20px;padding-right: 10px;">
+                                 <p style="font-family: Helvetica, Arial, sans-serif;font-size:27px;font-weight:bold;line-height:36px;color: #000;">No landline. No engineer. No waiting.</p>
+                                 <p style="font-size:16px;line-height:22px;color: #000;vertical-align: top;">Get our Home Broadband for 6 months half price. With next day delivery, order now and be online tomorrow. Try it yourself and there&#39;s a 30-day money back guarantee if required.</p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td align="left" style="padding-top:10px;padding-left: 20px;padding-right: 10px;">
+                                 <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
+                                    <tr>
+                                       
+                                       <td style="padding: 14px 26px 14px 26px;border-radius:10px; background-color: #000;width:200px;" align="center">
+                                          <a href="https://www.three.co.uk/" target="_blank" style="font-size: 17px; font-family: Helvetica, Arial, sans-serif; font-weight: bold;line-height: 19px; color: #FFBFC5; text-decoration: none; display: inline-block;">Discover Home Broadband</a>
+                                      </td>
+
+                                       
+
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+
+                     </td>
+                  </tr>
+               </table>
+
+               <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+               <![endif]-->
+
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- END FIFTH TWO COLUMNS -->
+
+
+<!-- START FOOTER -->
+<tr>
+   <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;background-color: #FDF2F0;">
+      <table width="100%" style="border-spacing:0;color:#3d3d3d;" role="presentation">
+         <tr>
+            <td class="two-columns" style="padding-top:20px;padding-right:0;padding-bottom:15px;padding-left:0;text-align:center;font-size:0;">
+
+               <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" style="border-spacing:0;color:#3d3d3d;" role="presentation">
+                  <tr>
+                  <td width="240" valign="top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+               <![endif]-->
+
+               <table class="column" style="border-spacing:0;color:#3d3d3d;width:100%;max-width:240px;display:inline-block;vertical-align:top;" role="presentation">
+                  <tr>
+                     <td width="240" class="padding px-sm-0" style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                        <table class="content" style="border-spacing:0;color:#000;width:100%;font-size:15px;text-align:center;" role="presentation">
+                           <tr>
+                              <td class="padding content" style="padding-right:0;padding-left:0;width:100%;text-align:center;">
+                                 <a href="https://www.three.co.uk/"><img src="images/proudpartners.png" alt="Proud Parteners" width="200" style="border-width:0;width: 200px;"></a>
+                              </td>
+                           </tr>
+                           
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            
+
+               <table class="column" style="border-spacing:0;color:#3d3d3d;width:100%;max-width:240px;display:inline-block;vertical-align:top;" role="presentation">
+                  <tr>
+                     <td width="240" class="padding px-sm-0" style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                        <table class="content" style="border-spacing:0;color:#000;width:100%;font-size:15px;text-align:center;" role="presentation">
+                           <tr>
+                              <td class="padding content" style="padding-top:10px;padding-right:0;padding-bottom:8px;padding-left:0;width:100%;text-align:center;">
+                                 <a href="https://www.three.co.uk/"><img src="images/partnership_logos.png" alt="Parteners" width="269" style="border-width:0;width: 269px;"></a>
+                              </td>
+                           </tr>
+                           
+                        </table>
+                        
+                     </td>
+                  </tr>
+               </table>
+        </td>
+     </tr>
+              
+             
+               <tr>
+                  <td>
+
+                     <table class="px90" width="560" style="width:560px" align="center" border="0" cellpadding="0" cellspacing="0">
+ 
+                       
+                           <tr>
+                              <td class="content" style="border-bottom:1px solid #000;height:1px;">
+                                 &nbsp;
+                                 </td>
+                            </tr>
+                           <tr>
+                                 <td class="px90" style="padding-top:20px;">
+                                    
+                                 <p style="margin:0 0 10px 3px;font-size:13px;line-height:15px;font-family:Arial,sans-serif;color:#000">Our Purchase new eligible device and trade-in any qualifying device by 12&#47;10&#47;22 to claim a payment of
+                                    &#163;250 on top of the standard trade-in value of your device. Maximum trade-in value of &#163;230 based on trading in an original Samsung Galaxy S21 Ultra 512GB. Three Recycle is powered by Three&#39;s device recycling partner, Ingram-Micro. See terms at  <a href="www.three.co.uk/recycle" target="_blank" style="text-decoration: underline;color: #000;">&copy;www.three.co.uk/recycle</a>. Proof of switching and new device serial number required.<br><br>
+                                    
+                                    &#169;2022 Disney and its related entities. Promoter: Samsung Electronics (UK) Limited. Offer valid until
+                                    30&#47;09&#47;22 on purchase of a new eligible Samsung Galaxy Z Flip4. 18&#43; UK residents only. Enter via
+                                    Samsung account to receive code. Redeem code by 30&#47;11&#47;22. RRP &#163;7.99p/m after 12mnths. Cancel anytime. T&amp;Cs apply. Visit <a href="https://www.samsung.com/uk/boost/disneyplusfullterms/" target="_blank" style="text-decoration: underline;color: #000;">www.samsung.com/uk/boost/disneyplusfullterms</a> &amp; <a href="https://www.samsung.com/uk/boost/disneyplusfullterms/" target="_blank" style="text-decoration: underline;color: #000;">www.disneyplus.com</a>
+                                    for details.<br><br>
+                                    
+                                    Promoter: Samsung Electronics (UK) Limited. UK residents (18&#43;) only or UK registered
+                                    companies. Purchase a Galaxy Flip4 or Galaxy Fold4 from a participating retailer between
+                                    10&#47;08&#47;2022 &#45; 29&#47;09&#47;2022 and claim a set of Galaxy Buds2 Pro (graphite) by redemption. No cash
+                                    alternative. Participants must visit <a href="https://www.samsungpromotions.claims/buds2prooffer/" target="_blank" style="text-decoration: underline;color: #000;">www.samsungpromotions.claims/buds2prooffer</a> and provide all
+                                    other required information including IMEI number. Claim from 01&#47;09&#47;22 within 60 days of purchase
+                                    Max. 1 claim per promotion product purchased (max. 4 claims per household and 50 claims per
+                                    company participant). See alternative. Participants must visit <a href="https://www.samsungpromotions.claims/buds2prooffer/" target="_blank" style="text-decoration: underline;color: #000;">www.samsungpromotions.claims/buds2prooffer</a> and provide all
+                                    for full Promotion terms.<br><br>
+                                    
+                                    Promoter: Samsung Electronics (UK) Limited. UK (18&#43;) or UK registered companies only. Purchase a
+                                    Galaxy Watch5 directly from Three between 26&#47;08&#47;2022 &#45; 02&#47;11&#47;2022 and claim a Google Play Gift
+                                    Code by redemption at <a href="https://2021.samsungpromotions.claims/samsunglaunchoffers" target="_blank" style="text-decoration: underline;color: #000;">samsungpromotions.claims/samsunglaunchoffers</a> within 60 days of
+                                    purchase. Proof of purchase required. No cash alternative. Full terms at
+                                    <a href="https://2021.samsungpromotions.claims/samsunglaunchoffers" target="_blank" style="text-decoration:underline;color: #000;">samsungpromotions.claims/samsunglaunchoffers</a>.
+                                    Three+ is available to Three Pay Monthly or Pay As You Go customers only, excluding Business and
+                                    Broadband customers. 18&#43;, UK only. Three+ and the offers are subject to change or withdrawal from time to time. For full terms, see
+                                    <a href="https://www.three.co.uk/terms-conditions/threeplus" target="_blank" style="text-decoration: underline;color: #000;">three.co.uk/terms-conditions/threeplus</a> 
+                                    
+                                    <br><br>
+                                    Cineworld:<br>
+                                    1 adult 2D standard ticket per week, Fri-Sun. Exclusions apply.<br><br>
+                                    
+                                    Frankie &amp; Benny&#39;s:<br>
+                                    One reward code per week. Dine-in only, after midday. Exclusions apply.<br><br>
+                                    Thortful offer:<br>
+                                    one code per customer every Thursday. Valid 00:01-23:59. Discount does not include delivery
+                                    charges. Apply code at checkout to redeem against a single card.<br><br>
+                                    All monthly prices quoted include a &#163;5 discount for paying by a recurring method such as direct
+                                    debit, and each April, monthly charges will increase by 4.5%.<br><br>
+                                    Student offer: You must be a student in order to claim these deals and have a valid student email address which ends in .ac.uk. All prices relate to 24&nbsp;month plans unless stated otherwise.<br><br>
+                                    Home Broadband offer: *6 months at &#163;10 a month, then &#163;20 a month from month 7 on a 24 month
+                                    plan. Selected postcodes only. Check availability at <a href="https://www.three.co.uk/Discover/Network/Coverage" target="_blank" style="text-decoration: underline;color: #000;">three.co.uk/Discover/Network/Coverage Order</a>
+                                    by 8pm for delivery next working day.<br><br>
+                                    Please don&#39;t reply to this message. If you don&#39;t want to receive emails about Three&#39;s products and services anymore, you can unsubscribe here.<br><br>
+                                    &#169;Hutchison 3G UK Limited.<br><br>
+                                    Registered office: 450 Longwater Avenue, Green Park, Reading, Berkshire, RG2 6GF.
+                                    Registered in England &amp; Wales, Company No. 03885486.
+                                    Authorised &amp; Regulated, for consumer credit, Financial Conduct Authority (No. 738979).</p>
+                                
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+           
+           
+           
+            
+          
+
+       
+      </table>
+   </td>
+</tr>
+
+
+<!-- END FOOTER -->
+
+
+
+
+</table>
+ <!--[if (gte mso 9)|(IE)]>
+ </td>
+ </tr>
+ </table> 
+<![endif]-->
+</div>
+      </center>
+</body>
+</html>
